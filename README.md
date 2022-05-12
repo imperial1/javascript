@@ -568,16 +568,16 @@ Other Style Guides
 ## Strings
 
   <a name="strings--quotes"></a><a name="6.1"></a>
-  - [6.1](#strings--quotes) Use single quotes `''` for strings. eslint: [`quotes`](https://eslint.org/docs/rules/quotes.html)
+  - [6.1](#strings--quotes) Use double quotes `""` for strings. eslint: [`quotes`](https://eslint.org/docs/rules/quotes.html)
 
     ```javascript
-    // bad
+    // good
     const name = "Capt. Janeway";
 
     // bad - template literals should contain interpolation or newlines
     const name = `Capt. Janeway`;
 
-    // good
+    // bad
     const name = 'Capt. Janeway';
     ```
 
@@ -588,18 +588,18 @@ Other Style Guides
 
     ```javascript
     // bad
-    const errorMessage = 'This is a super long error that was thrown because \
+    const errorMessage = "This is a super long error that was thrown because \
     of Batman. When you stop to think about how Batman had anything to do \
     with this, you would get nowhere \
-    fast.';
+    fast.";
 
     // bad
-    const errorMessage = 'This is a super long error that was thrown because ' +
-      'of Batman. When you stop to think about how Batman had anything to do ' +
-      'with this, you would get nowhere fast.';
+    const errorMessage = "This is a super long error that was thrown because " +
+      "of Batman. When you stop to think about how Batman had anything to do " +
+      "with this, you would get nowhere fast.";
 
     // good
-    const errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
+    const errorMessage = "This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.";
     ```
 
   <a name="es6-template-literals"></a><a name="6.4"></a>
@@ -610,22 +610,22 @@ Other Style Guides
     ```javascript
     // bad
     function sayHi(name) {
-      return 'How are you, ' + name + '?';
+      return "How are you, " + name + "?";
     }
 
     // bad
     function sayHi(name) {
-      return ['How are you, ', name, '?'].join();
+      return ["How are you, ", name, "?"].join();
     }
 
     // bad
     function sayHi(name) {
-      return `How are you, ${ name }?`;
+      return "How are you, ${ name }?";
     }
 
     // good
     function sayHi(name) {
-      return `How are you, ${name}?`;
+      return "How are you, ${name}?";
     }
     ```
 
@@ -639,11 +639,11 @@ Other Style Guides
 
     ```javascript
     // bad
-    const foo = '\'this\' \i\s \"quoted\"';
+    const foo = "\'this\' \i\s \"quoted\"";
 
     // good
-    const foo = '\'this\' is "quoted"';
-    const foo = `my name is '${name}'`;
+    const foo = "'this' is \"quoted\"";
+    const foo = "my name is '${name}'";
     ```
 
 **[⬆ back to top](#table-of-contents)**
